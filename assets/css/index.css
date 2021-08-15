@@ -57,7 +57,7 @@ nav h3{
     padding: 0 100px;
    
 }
-.banner{
+.flex-container{
     margin-top: 0px;
     display: flex;
     justify-content: space-around;
@@ -83,5 +83,48 @@ nav h3{
     background-repeat: no-repeat;
     background-position: 5% 80%;
 }
-.banner aside img{
+.container aside {
+    width: 580px;
+}
+.container aside img{
+    width: 100%;
+}
+.trans-left{
+    transform: translateX(-60px);
+}
+.step-section{
+    align-items: start;
+}
+.step-section h3{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    margin-top: 100px;
+}
+.step-section ul{
+    padding: 0;
+    margin-top: 20px;
+}
+.step-section li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+.step-section span{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 10px 2px 50px 20px rgba(177, 98, 41, 0.356);
+}
+.step-section h4{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+}
+.step-section ul p{
+    font-size: 14px;
 }

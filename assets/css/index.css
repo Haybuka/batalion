@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+   --font-color:rgb(0, 0, 0);
+}
+body{
+    background-color: #E5E5E5;
+    font-family: 'Poppins',sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+}
+nav .logo{
+    background-image: url('/assets/image/logo.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 10px;
+    background-size: contain;
+    grid-column: 1/2;
+}
+nav h3{
+    text-shadow: 1px 1px 2px #fff;
+}
+.navbar-nav{
+    grid-column: 2/13;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+    text-align: center;
+}
+.btn{
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.btn-signup{
+    background-color: #21B4AB;
+    color: #fff;
+}
+.container{
+    padding: 0 100px;
+   
+}
+.banner{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner h1{
+    color: #454545;
+    font-size: 70px;
+}
+.banner h1 p{
+    line-height: 70px;
+}
+.banner h1 + p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.btn-get-started{
+    background-color: #51204A;
+    color: #fff;
+}
+.banner aside{
+    background-image: url('/assets/image/BannerDots.png');
+    background-repeat: no-repeat;
+    background-position: 5% 80%;
+}
+.banner aside img{
+}

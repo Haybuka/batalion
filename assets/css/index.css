@@ -98,6 +98,9 @@ nav h3{
 .trans-left{
     transform: translateX(-60px);
 }
+.trans-right{
+    transform: translateX(60px);
+}
 .step-section{
     align-items: start;
 }
@@ -112,13 +115,13 @@ nav h3{
     padding: 0;
     margin-top: 20px;
 }
-.step-section li{
+.flex-container li{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     margin: 15px 0;
 }
-.step-section span{
+.flex-container span{
     display: inline-block;
     background-color: rgb(255, 255, 255);
     padding: 20px;
@@ -126,12 +129,80 @@ nav h3{
     margin-right: 10px;
     box-shadow: 10px 2px 50px 10px rgba(177, 98, 41, 0.356);
 }
-.step-section h4{
+.flex-container h4{
     font-size: 20px;
     line-height: 25px;
     font-weight: 700;
 }
-.step-section ul p{
+.flex-container ul p{
     font-size: 14px;
 }
 
+.batalion-help{
+    background-color:#CDEBFC;
+    border-radius: 35px;
+}
+.batalion-help span{
+    box-shadow: none;
+}
+.batalion-help li{
+    width: 370px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.37);
+}
+.batalion-help li p{
+    line-height: 15px;
+}
+.batalion-help li div:nth-child(2){
+    margin-left: 15px;
+}
+.batalion-help ul{
+    padding: 0;
+    position: relative;
+}
+.bat-first{
+    transform: translate(100px,-50px);
+}
+.bat-second{
+    transform: translateX(180px)
+}
+.bat-third{
+    transform: translateY(30px);
+}
+.img-fluid{
+    width: 50px;
+}
+.updated-blog{
+    margin: 100px 0;
+}
+.updated-blog h3{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.updated-blog .flex-container{
+    margin: 30px 0;
+}
+.updated-blog h4{
+    margin: 30px 0;
+}
+.updated-blog article{
+    margin: 0 20px;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+.updated-blog article p{
+    border-radius: 25px;
+    padding: 15px 25px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.updated-blog article:nth-child(1) p{
+   background-color: #62FF4836;
+}
+.updated-blog article:nth-child(2) p{
+    background-color: #FFC14836;
+ }

@@ -81,7 +81,7 @@ nav h3{
 .banner aside{
     background-image: url('/assets/image/BannerDots.png');
     background-repeat: no-repeat;
-    background-position: 5% 80%;
+    background-position: 5% 95%;
 }
 .container aside {
     width: 580px;
@@ -95,10 +95,10 @@ nav h3{
 .step-section{
     align-items: start;
 }
-.step-section h3{
+.flex-container h3{
     font-size: 45px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 55px;
     text-align: left;
     margin-top: 100px;
 }
@@ -118,7 +118,7 @@ nav h3{
     padding: 20px;
     border-radius: 10px;
     margin-right: 10px;
-    box-shadow: 10px 2px 50px 20px rgba(177, 98, 41, 0.356);
+    box-shadow: 10px 2px 50px 10px rgba(177, 98, 41, 0.356);
 }
 .step-section h4{
     font-size: 20px;
@@ -126,5 +126,11 @@ nav h3{
     font-weight: 700;
 }
 .step-section ul p{
+    font-size: 14px;
+}
+.to-moon h3+div{
+    margin: 25px 0;
+}
+.to-moon h3 + div >p{
     font-size: 14px;
 }

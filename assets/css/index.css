@@ -63,6 +63,12 @@ nav h3{
     justify-content: space-around;
     align-items: center;
 }
+.flex-container h3+div{
+    margin: 25px 0;
+}
+.flex-container h3 + div >p{
+    font-size: 14px;
+}
 .banner h1{
     color: #454545;
     font-size: 70px;
@@ -128,9 +134,4 @@ nav h3{
 .step-section ul p{
     font-size: 14px;
 }
-.to-moon h3+div{
-    margin: 25px 0;
-}
-.to-moon h3 + div >p{
-    font-size: 14px;
-}
+

@@ -4,15 +4,25 @@
     margin: 0;
 }
 :root{
-   --font-color:rgb(0, 0, 0);
+   --font-lightcolor:rgb(0, 0, 0);
+   --font-darkcolor:rgb(255, 255, 255);
+   --header-lightcolor:#454545;
+   --header-darkcolor:#ffffffdb;
+   --light-bg:#E5E5E5;
+   --dark-bg:#000000;
+   --text-lightshadow:#fff;
+   --btn-signup:#21B4AB;
+   --btn-started:#51204A;
+   --bat-bg:#CDEBFC;
+   
 }
 body{
-    background-color: #E5E5E5;
+    background-color: var(--light-bg);
     font-family: 'Poppins',sans-serif;
 }
 a{
     text-decoration: none;
-    color: #000;
+    color: var(--font-lightcolor);
 }
 nav{
     display: grid;
@@ -30,7 +40,7 @@ nav .logo{
     grid-column: 1/2;
 }
 nav h3{
-    text-shadow: 1px 1px 2px #fff;
+    text-shadow: 1px 1px 2px var(--text-lightshadow);
 }
 .navbar-nav{
     grid-column: 2/13;
@@ -48,10 +58,36 @@ nav h3{
     padding: 15px 20px;
     border-radius: 10px;
     display: inline-block;
+    position: relative;
+}
+/* a.btn{
+    color: #fff;
+} */
+.btn::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    content: '';
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    z-index: -1;
+}
+.btn:hover::after{
+    transform: scaleX(1.2);
+    opacity: 0;
 }
 .btn-signup{
-    background-color: #21B4AB;
+    background-color: var(--btn-signup);
     color: #fff;
+}
+.btn-signup::after{
+    background-color: var(--btn-signup);
+}
+.btn-get-started::after{
+    background-color: var(--btn-started);
 }
 .container{
     padding: 0 100px;
@@ -62,6 +98,10 @@ nav h3{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition:  all 0.3s ease-in;
+}
+.flex-container:hover{
+    transform: translateY(-10px);
 }
 .flex-container h3+div{
     margin: 25px 0;
@@ -69,8 +109,39 @@ nav h3{
 .flex-container h3 + div >p{
     font-size: 14px;
 }
+.flex-container h3{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: left;
+    margin-top: 100px;
+}
+.flex-container li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 15px 0;
+    color: var(--font-lightcolor);
+
+}
+.flex-container span{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 10px 2px 50px 10px rgba(177, 98, 41, 0.356);
+}
+.flex-container h4{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+}
+.flex-container ul p{
+    font-size: 14px;
+}
 .banner h1{
-    color: #454545;
+    color: var(--header-lightcolor);
     font-size: 70px;
 }
 .banner h1 p{
@@ -81,7 +152,7 @@ nav h3{
     font-size: 20px;
 }
 .btn-get-started{
-    background-color: #51204A;
+    background-color: var(--btn-started);
     color: #fff;
 }
 .banner aside{
@@ -104,42 +175,14 @@ nav h3{
 .step-section{
     align-items: start;
 }
-.flex-container h3{
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 55px;
-    text-align: left;
-    margin-top: 100px;
-}
+
 .step-section ul{
     padding: 0;
     margin-top: 20px;
 }
-.flex-container li{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 15px 0;
-}
-.flex-container span{
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 10px;
-    margin-right: 10px;
-    box-shadow: 10px 2px 50px 10px rgba(177, 98, 41, 0.356);
-}
-.flex-container h4{
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 700;
-}
-.flex-container ul p{
-    font-size: 14px;
-}
 
 .batalion-help{
-    background-color:#CDEBFC;
+    background-color:var(--bat-bg);
     border-radius: 35px;
 }
 .batalion-help span{
@@ -212,7 +255,7 @@ nav h3{
      align-items: flex-start;
  }
 footer.container{
-    background-color: #51204A;
+    background-color: var(--btn-started);
     padding-top:70px;
     padding-bottom:70px ;
 }

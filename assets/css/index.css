@@ -387,3 +387,14 @@ footer .footer-first li:nth-child(2){
         margin: 25px 0;
     }
 }
+@media screen and (max-width:580px){
+    .container aside{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .trans-left,.trans-right{
+        transform: translate(0);
+    }
+}

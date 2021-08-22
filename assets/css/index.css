@@ -320,7 +320,7 @@ footer .footer-first li:nth-child(2){
     }
     body.toggle nav::after{
         position: absolute;
-        height: 100vh;
+        height: 500px;
         width: 100%;
         background-color: rgb(255, 255, 255);
         opacity: 0.8;

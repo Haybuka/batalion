@@ -8,7 +8,7 @@
    --font-darkcolor:rgb(255, 255, 255);
    --header-lightcolor:#454545;
    --header-darkcolor:#ffffffdb;
-   --light-bg:#E5E5E5;
+   --light-bg:#ffffff;
    --dark-bg:#000000;
    --text-lightshadow:#fff;
    --btn-signup:#21B4AB;
@@ -296,8 +296,25 @@ footer .footer-first li:nth-child(2){
 .social-links span img{
     width: 100%;
 }
-
+@media screen and (max-width:1040px){
+    .container{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width:870px){
+    .flex-container{
+        /* flex-direction: column; */
+        display: block;
+        margin-top: 35px;
+    }
+    .container aside{
+        margin:0 auto;
+    }
+}
 @media screen and (max-width:720px){
+    body.toggle nav{
+        box-shadow: 1px 1px 3px 10px rgba(0, 0, 0, 0.1);
+    }
     .navbar-nav{
         grid-row: 2/3;
         grid-column: 1/13;
@@ -305,6 +322,9 @@ footer .footer-first li:nth-child(2){
         height: 0;
         overflow: hidden;
     
+    }
+    .btn::after{
+        display: none;
     }
     .navbar-nav.show{
         height: auto;

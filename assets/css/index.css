@@ -312,6 +312,23 @@ footer .footer-first li:nth-child(2){
     }
 }
 @media screen and (max-width:720px){
+    .banner h1 {
+        font-size: 40px;
+    }
+    .banner h1 p{
+        line-height: 40px;
+    }
+    .flex-container h3{
+        line-height: 40px;
+        font-size: 30px;
+    }
+    .flex-container h4{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .flex-container ul p{
+        font-size: 12px;
+    }
     body.toggle nav{
         box-shadow: 1px 1px 3px 10px rgba(0, 0, 0, 0.1);
         z-index: 1;

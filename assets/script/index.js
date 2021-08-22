@@ -1,17 +1,17 @@
 let harmburger = document.querySelector('.nav-toggle');
 let body = document.querySelector('body');
 harmburger.addEventListener('click',function(){
-   let navbarNav = document.querySelector('.navbar-nav');
-  
-    navbarNav.classList.toggle('show')
-    let imgSrc = this.querySelector('img').src;
+    let navbarNav = document.querySelector('.navbar-nav');
+    let imgSrc = this.querySelector('img');
     body.classList.toggle('toggle')
-    console.log(imgSrc)
+    console.log(imgSrc.src)
+    navbarNav.classList.toggle('show')
     
-    // if(imgSrc.includes('harmburger')){
-    //     console.log('includes harm')
-    //     imgSrc = '/assets/image/logo/close-nav.svg'
-    // }else{
-    //     imgSrc = '/assets/image/logo/harmburger.svg'
-    // }
+    if(imgSrc.src.includes('harmburger')){
+        console.log('includes harm')
+        imgSrc.setAttribute('src','/assets/image/logo/close-nav.svg')
+    }else{
+        imgSrc.setAttribute('src','/assets/image/logo/harmburger.svg')
+
+    }
 })

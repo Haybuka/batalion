@@ -365,7 +365,7 @@ footer .footer-first li:nth-child(2){
     .banner h1 p{
         line-height: 40px;
     }
-    .flex-container h3{
+    .flex-container h3,.updated-blog h3{
         line-height: 40px;
         font-size: 30px;
     }

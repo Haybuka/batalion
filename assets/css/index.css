@@ -299,7 +299,7 @@ footer .footer-first li:nth-child(2){
 
 @media screen and (max-width:1040px){
     .container{
-        padding: 0 30px;
+        padding: 0 30px !important;
     }
     .batalion-help{
         padding-left: 20px;
@@ -349,6 +349,9 @@ footer .footer-first li:nth-child(2){
     }
     .bat-second{
         transform: translateX(40px);
+    }
+    .updated-blog{
+        margin: 15px 0;
     }
 }
 @media screen and (max-width:720px){
@@ -443,6 +446,9 @@ footer .footer-first li:nth-child(2){
     .navbar-nav ul:nth-child(2) li:nth-child(2){
         margin: 25px 0;
     }
+    .trans-left,.trans-right{
+        transform: translate(0);
+    }
 }
 @media screen and (max-width:580px){
     .container aside{
@@ -451,7 +457,8 @@ footer .footer-first li:nth-child(2){
         justify-content: center;
         align-items: center;
     }
-    .trans-left,.trans-right{
-        transform: translate(0);
-    }
+  .updated-blog article{
+      box-shadow: 2px 2px 5px #00000040;
+      margin: 25px 0px !important;
+  }
 }

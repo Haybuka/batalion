@@ -461,4 +461,16 @@ footer .footer-first li:nth-child(2){
       box-shadow: 2px 2px 5px #00000040;
       margin: 25px 0px !important;
   }
+  .bat-second{
+    transform: translate(0);
+}
+.batalion-help aside{
+    transform: translate(0);
+}
+.batalion-help li{
+    width: auto;
+}
+.batalion-help{
+    padding: 0;
+}
 }

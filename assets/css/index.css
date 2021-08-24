@@ -296,6 +296,9 @@ footer .footer-first li:nth-child(2){
 .social-links span img{
     width: 100%;
 }
+.copyright{
+    display: none;
+}
 
 @media screen and (max-width:1040px){
     .container{
@@ -459,6 +462,14 @@ footer .footer-first li:nth-child(2){
     }
     .trans-left,.trans-right{
         transform: translate(0);
+    }
+    footer.container{
+        flex-direction: column-reverse;
+    }
+    .copyright{
+        display: block;
+        font-size: 12px;
+        margin: 15px 0;
     }
 }
 @media screen and (max-width:580px){

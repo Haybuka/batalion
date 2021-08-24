@@ -475,6 +475,6 @@ footer .footer-first li:nth-child(2){
     width: auto;
 }
 .batalion-help{
-    padding: 0;
+    padding: 0 !important;
 }
 }

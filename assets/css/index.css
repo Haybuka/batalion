@@ -322,6 +322,10 @@ footer .footer-first li:nth-child(2){
         display: block;
         margin-top: 35px;
     }
+    .step-section,.to-moon{
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
     .container aside{
         margin:0 auto;
     }

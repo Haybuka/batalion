@@ -365,6 +365,13 @@ footer .footer-first li:nth-child(2){
     .banner h1 p{
         line-height: 40px;
     }
+    .step-section li{
+        margin: 25px 0;
+    }
+    .flex-container span{
+        padding: 15px;
+        box-shadow: 10px 2px 50px 10px rgba(177, 98, 41, 0.16);
+    }
     .flex-container h3,.updated-blog h3{
         line-height: 40px;
         font-size: 30px;

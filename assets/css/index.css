@@ -358,7 +358,7 @@ footer .footer-first li:nth-child(2){
         transform: translateX(40px);
     }
     .updated-blog{
-        margin: 15px 0;
+        margin: 40px 0;
     }
 }
 @media screen and (max-width:720px){

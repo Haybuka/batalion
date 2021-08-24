@@ -18,3 +18,5 @@ harmburger.addEventListener('click',function(){
 
     }
 })
+
+AOS.init();
